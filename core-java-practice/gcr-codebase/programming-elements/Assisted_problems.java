@@ -1,74 +1,81 @@
-//2. Add Two Numbers
 import java.util.Scanner;
+//Welcome to Bridgelabz!
 
-public class AddTwoNumbers {
+public class Assisted_Problems {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        System.out.println("Welcome to Bridgelabz!");
+    }
+}
 
+//Add Two Numbers
+
+class AddTwoNumbers {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
         System.out.print("Enter first number: ");
-        int num1 = sc.nextInt();
-
+        double num1 = scanner.nextDouble();
+        
         System.out.print("Enter second number: ");
-        int num2 = sc.nextInt();
-
-        int sum = num1 + num2;
-
-        System.out.println("Sum = " + sum);
-
-        sc.close();
+        double num2 = scanner.nextDouble();
+        
+        double sum = num1 + num2;
+        System.out.println("The sum is: " + sum);
+        
+        
     }
 }
-//3. Celsius to Fahrenheit Conversion
-import java.util.Scanner;
 
-public class CelsiusToFahrenheit {
+//Celsius to Fahrenheit Conversion
+
+
+class CelsiusToFahrenheit {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
+        Scanner scanner = new Scanner(System.in);
+        
         System.out.print("Enter temperature in Celsius: ");
-        double celsius = sc.nextDouble();
-
-        double fahrenheit = (celsius * 9.0 / 5.0) + 32;
-
-        System.out.println("Temperature in Fahrenheit = " + fahrenheit);
-
-        sc.close();
+        double celsius = scanner.nextDouble();
+        
+        double fahrenheit = (celsius * 9 / 5) + 32;
+        System.out.println("Temperature in Fahrenheit: " + fahrenheit);
+        
+        
     }
 }
-//4. Area of a Circle
-import java.util.Scanner;
 
-public class AreaOfCircle {
+//Area of a Circle
+
+
+class AreaOfCircle {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        System.out.print("Enter radius: ");
-        double radius = sc.nextDouble();
-
-        double area = Math.PI * radius * radius;
-
-        System.out.println("Area of Circle = " + area);
-
-        sc.close();
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter the radius of the circle: ");
+        double radius = scanner.nextDouble();
+        
+        double area = Math.PI * Math.pow(radius, 2);
+        System.out.println("The area of the circle is: " + area);
+        
+        
     }
 }
-//5. Volume of a Cylinder
-import java.util.Scanner;
 
-public class VolumeOfCylinder {
+//Volume of a Cylinder
+
+
+class VolumeOfCylinder {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        System.out.print("Enter radius: ");
-        double radius = sc.nextDouble();
-
-        System.out.print("Enter height: ");
-        double height = sc.nextDouble();
-
-        double volume = Math.PI * radius * radius * height;
-
-        System.out.println("Volume of Cylinder = " + volume);
-
-        sc.close();
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter the radius of the cylinder: ");
+        double radius = scanner.nextDouble();
+        
+        System.out.print("Enter the height of the cylinder: ");
+        double height = scanner.nextDouble();
+        
+        double volume = Math.PI * Math.pow(radius, 2) * height;
+        System.out.println("The volume of the cylinder is: " + volume);
+        
+        
     }
 }
