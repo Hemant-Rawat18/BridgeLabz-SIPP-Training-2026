@@ -1,3 +1,2 @@
 # Write your MySQL query statement below
-Select   ( select distinct salary from Employee  order By salary Desc
- limit 1 OFFSET 1 ) as SecondHighestSalary;
+select (select distinct Salary  from Employee order by Salary  desc limit 1 offset 1) as SecondHighestSalary ;
