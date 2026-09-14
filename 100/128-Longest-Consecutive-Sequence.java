@@ -9,14 +9,13 @@ class Solution {
                 continue;
             }else if(nums[i]-nums[i-1]==1){
                 count++;
+                max=Math.max(count,max);
             }
             else{
-              max=Math.max(count,max);
               count=1;
             
             }
         }
-        max=Math.max(count,max);
         return max;
     }
 }
